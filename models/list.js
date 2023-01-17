@@ -6,8 +6,6 @@ const listSchema = new Schema({
   grocery: String,
   checkbox: Boolean,
   owner: {type: Schema.Types.ObjectId, ref: "Profile"}
-}, {
-  timestamps: true
 })
 
 const List = mongoose.model('List', listSchema)

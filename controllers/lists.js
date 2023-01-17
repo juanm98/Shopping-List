@@ -5,7 +5,7 @@ function index(req, res) {
   .then(lists => {
     res.render('lists/index', {
       lists,
-      title: "📃"
+      title: "All Lists"
     })
   })
   .catch(err => {
@@ -14,6 +14,13 @@ function index(req, res) {
   })
 }
 
+function newList(req, res) {
+  res.render("lists/new", {
+    title: "Add List",
+  })
+}
+
 export {
-  index
+  index,
+  newList as new
 }

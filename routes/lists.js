@@ -1,10 +1,9 @@
 import { Router } from 'express'
 
 const router = Router()
+// GET /lists
+router.get('/', listsCtrl.index)
 
-router.get('/', function (req, res) {
-  res.render('index', { title: 'Home Page' })
-})
 
 export {
   router

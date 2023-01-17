@@ -2,11 +2,14 @@
 <%- include('../partials/nav') %>
 
 <section>
-  <h1>Lists 📃</h1>
-  <h2>All the Lists!</h2>
+  <h1>List 📃</h1>
+  <% if (user) { %>
+    <h1>There is a user</h1>
+    <% } %>
+  <h2>Add your groceries!</h2>
 	<ul>
   <% lists.forEach(list => { %>
-    <li>🌮 <%= list.grocery %> is <%= list.checkbox ? 'checked' : 'not checked' %></li>
+    <li>🛒 <%= list.grocery %> is <%= list.checkbox ? 'checked' : 'not checked' %></li>
   <% }) %>
   </ul>
 </section>

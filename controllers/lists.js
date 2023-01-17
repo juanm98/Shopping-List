@@ -3,7 +3,7 @@ import { List } from "../models/list.js";
 function index(req, res) {
   List.find({})
   .then(lists => {
-    res.render('lists/index', {
+    res.render("lists/index", {
       lists,
       title: "All Lists"
     })
@@ -23,11 +23,11 @@ function newList(req, res) {
 function create(req, res) {
   List.create(req.body)
   .then(list => {
-    res.redirect('/lists/new')
+    res.redirect("/lists/new")
   })
   .catch(err => {
     console.log(err)
-    res.redirect('/lists/new')
+    res.redirect("/lists/new")
   })
 }
 

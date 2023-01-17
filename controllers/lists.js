@@ -20,7 +20,19 @@ function newList(req, res) {
   })
 }
 
+function create(req, res) {
+  List.create(req.body)
+  .then(list => {
+    res.redirect('/lists/new')
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/lists/new')
+  })
+}
+
 export {
   index,
-  newList as new
+  newList as new,
+  create
 }

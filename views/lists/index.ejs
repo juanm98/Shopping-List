@@ -1,0 +1,14 @@
+<%- include('../partials/html-head') %>
+<%- include('../partials/nav') %>
+
+<section>
+  <h1>Lists 📃</h1>
+  <h2>All the Lists!</h2>
+	<ul>
+  <% lists.forEach(list => { %>
+    <li>🌮 <%= list.grocery %> is <%= list.checkbox ? 'checked' : 'not checked' %></li>
+  <% }) %>
+  </ul>
+</section>
+
+<%- include('../partials/footer') %>

@@ -23,7 +23,7 @@ function newList(req, res) {
 function create(req, res) {
   List.create(req.body)
   .then(list => {
-    res.redirect("/lists/new")
+    res.redirect("/lists")
   })
   .catch(err => {
     console.log(err)

@@ -10,6 +10,11 @@
   >
     ADD LIST
   </a>
+  <a 
+  href="/lists" <%- title === 'All List' ? 'class="active"' : '' %>
+>
+  ALL LISTS
+</a>
     <!-- <a href="/lists">📃</a> -->
     <% if (user) { %>
       <a href="/auth/logout" class="right">

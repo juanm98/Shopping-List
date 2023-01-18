@@ -23,8 +23,8 @@ router.post('/:id/groceries', listsCtrl.createGrocery)
 // DELETE /lists/:id
 router.delete('/:id', listsCtrl.delete)
 
-// router.delete
-// router.delete('/:id/groceries', listsCtrl.deleteGrocery)
+// DELETE /lists/:id/groceries
+router.delete('/:id/groceries', listsCtrl.deleteGrocery)
 
 // PUT /lists/:id
 router.put('/:id', listsCtrl.update)

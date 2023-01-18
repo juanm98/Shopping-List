@@ -37,18 +37,15 @@
           <tr>
             <td><%= grocery.content %></td>
             <td><%= grocery.quantity%></td>
-            <td>
-              <a href="/lists/<%= list._id %>/groceries">
-                <button>Edit</button>
-              </a>
-              <form 
-                action="/:id/groceries<%= list._id %>?_method=DELETE" 
-                method="POST"
-              >
-                <button>🗑️</button>
-              </form>
-            </td>
         <% }) %>
+        <td>
+          <form 
+            action="/lists/:id/groceries<%= list.groceries._id %>?_method=DELETE" 
+            method="POST"
+          >
+            <button>🗑️</button>
+          </form>
+        </td>
       </tbody>
     </table>
   <% } else { %>

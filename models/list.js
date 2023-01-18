@@ -9,6 +9,7 @@ const grocerySchema = new Schema({
     match: /[1-99]\d?/,
     min: 1
   },
+  owner: {type: Schema.Types.ObjectId, ref: "Profile"}
 })
 
 const listSchema = new Schema({

@@ -100,6 +100,18 @@ function createGrocery(req, res) {
   })
 }
 
+function deleteGrocery(req, res) {
+  List.findByIdAndDelete(req.params.id)
+  .then(list => {
+    res.redirect("/lists/:id")
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect("/lists/:id")
+  })
+  // console.log("I'M WORKINNNNNNNNNNNG")
+}
+
 export {
   index,
   newList as new,
@@ -109,4 +121,5 @@ export {
   edit,
   update,
   createGrocery,
+  deleteGrocery
 }

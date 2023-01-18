@@ -70,11 +70,23 @@ function edit(req, res) {
   })
 }
 
+function update(req, res) {
+  List.findByIdAndUpdate(req.params.id, req.body, {new: true})
+  .then(list => {
+    res.redirect(`/lists/${list._id}`)
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect("/")
+  })
+}
+
 export {
   index,
   newList as new,
   create,
   show,
   deleteList as delete,
-  edit
+  edit,
+  update
 }

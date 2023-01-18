@@ -20,6 +20,9 @@ router.post('/', listsCtrl.create)
 // DELETE /lists/:id
 router.delete('/:id', listsCtrl.delete)
 
+// PUT /lists/:id
+router.put('/:id', listsCtrl.update)
+
 export {
   router
 }

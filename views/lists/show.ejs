@@ -5,7 +5,6 @@
 <main>
   <h1><%= title %></h1>
   <section>
-    <div>List Name: </div>
     <div>
       <%= list.title %>
       <a href="/lists/<%= list._id %>/edit">
@@ -13,6 +12,20 @@
       </a>
     </div>
   </section>
+  <h2>Grocery Items</h2>
+  <form 
+  id="add-grocery-form"
+  action="/lists/<%= list._id %>/groceries"
+  method="POST"
+  >
+  <label for="content-input">Grocery:</label>
+    <input name="content" id="content-input"></input>
+    <label for="grocery-input">Quantity:</label>
+    <input name="grocery" required pattern="[1-99]\d?">
+    <button type="submit">Add Grocery</button>
+  </form>
+
+</form>
 </main>
   
 <%- include('../partials/footer') %>

@@ -81,6 +81,25 @@ function update(req, res) {
   })
 }
 
+function createGrocery(req, res) {
+  List.findById(req.params.id)
+  .then(list => {
+    list.groceries.push(req.body)
+    list.save()
+    .then(() => {
+      res.redirect(`/lists/${list._id}`)
+    })
+    .catch(err => {
+      console.log(err)
+      res.redirect('/')
+    })
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect('/')
+  })
+}
+
 export {
   index,
   newList as new,
@@ -88,5 +107,6 @@ export {
   show,
   deleteList as delete,
   edit,
-  update
+  update,
+  createGrocery
 }

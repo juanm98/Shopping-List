@@ -17,6 +17,9 @@ router.get('/:id/edit', listsCtrl.edit)
 // POST /lists
 router.post('/', listsCtrl.create)
 
+// POST /lists/:id/groceries
+router.post('/:id/groceries', listsCtrl.createGrocery)
+
 // DELETE /lists/:id
 router.delete('/:id', listsCtrl.delete)
 

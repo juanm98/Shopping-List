@@ -38,6 +38,9 @@
             <td><%= grocery.content %></td>
             <td><%= grocery.quantity%></td>
             <td>
+              <a href="/lists/<%= list._id %>/groceries">
+                <button>Edit</button>
+              </a>
               <form 
                 action="/:id/groceries<%= list._id %>?_method=DELETE" 
                 method="POST"

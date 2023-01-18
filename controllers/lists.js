@@ -108,5 +108,5 @@ export {
   deleteList as delete,
   edit,
   update,
-  createGrocery
+  createGrocery,
 }

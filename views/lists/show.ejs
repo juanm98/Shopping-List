@@ -12,7 +12,7 @@
       </a>
     </div>
   </section>
-  <h2>Grocery Items</h2>
+  <h2></h2>
   <form 
   id="add-grocery-form"
   action="/lists/<%= list._id %>/groceries"
@@ -37,7 +37,14 @@
           <tr>
             <td><%= grocery.content %></td>
             <td><%= grocery.quantity%></td>
-          </tr>
+            <td>
+              <form 
+                action="/:id/groceries<%= list._id %>?_method=DELETE" 
+                method="POST"
+              >
+                <button>🗑️</button>
+              </form>
+            </td>
         <% }) %>
       </tbody>
     </table>

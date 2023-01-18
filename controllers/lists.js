@@ -32,7 +32,17 @@ function create(req, res) {
 }
 
 function show(req, res) {
-  
+  List.findById(req.params.id)
+  .then(list => {
+    res.render("lists/show", { 
+      title: "Add groceries", 
+      list: list,
+    })    
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect("/")
+  })
 }
 
 export {

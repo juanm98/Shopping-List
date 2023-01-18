@@ -14,6 +14,15 @@
       <% lists.forEach(list => { %>
         <tr>
           <td><%= list.title %></td>
+          <td><a href="/lists/<%= list._id %>">Add Groceries</a></td>
+        <td>
+          <form 
+            action="/lists/<%= list._id %>?_method=DELETE" 
+            method="POST"
+          >
+            <button>🗑️</button>
+          </form>
+        </td>
         </tr>
         <% }) %>
     </tbody>

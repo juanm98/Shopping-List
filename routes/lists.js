@@ -8,6 +8,9 @@ router.get('/', listsCtrl.index)
 // GET /lists/new
 router.get('/new', listsCtrl.new)
 
+// GET /lists/:id
+router.get('/:id', listsCtrl.show)
+
 // POST /lists
 router.post('/', listsCtrl.create)
 

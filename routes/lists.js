@@ -11,6 +11,9 @@ router.get('/new', listsCtrl.new)
 // GET /lists/:id
 router.get('/:id', listsCtrl.show)
 
+// GET /lists/:id/edit
+router.get('/:id/edit', listsCtrl.edit)
+
 // POST /lists
 router.post('/', listsCtrl.create)
 

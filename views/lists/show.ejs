@@ -6,7 +6,12 @@
   <h1><%= title %></h1>
   <section>
     <div>List Name: </div>
-    <div><%= list.title %></div>
+    <div>
+      <%= list.title %>
+      <a href="/lists/<%= list._id %>/edit">
+        <button>✏️</button>
+      </a>
+    </div>
   </section>
 </main>
   

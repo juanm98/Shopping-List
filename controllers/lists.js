@@ -56,10 +56,25 @@ function deleteList(req, res) {
   })
 }
 
+function edit(req, res) {
+  List.findById(req.params.id)
+  .then(list => {
+    res.render("lists/edit", {
+      title: "Edit list",
+      list
+    })
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect("/")
+  })
+}
+
 export {
   index,
   newList as new,
   create,
   show,
-  deleteList as delete
+  deleteList as delete,
+  edit
 }

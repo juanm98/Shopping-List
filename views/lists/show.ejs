@@ -20,12 +20,30 @@
   >
   <label for="content-input">Grocery:</label>
     <input name="content" id="content-input"></input>
-    <label for="grocery-input">Quantity:</label>
-    <input name="grocery" required pattern="[1-99]\d?">
+    <label for="quantity-input">Quantity:</label>
+    <input name="quantity" required pattern="[1-99]\d?">
     <button type="submit">Add Grocery</button>
   </form>
-
-</form>
+  <% if (list.groceries.length) { %>
+    <table>
+      <thead>
+        <tr>
+          <th>Grocery</th>
+          <th>Quantity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% list.groceries.forEach(function(grocery) { %>
+          <tr>
+            <td><%= grocery.content %></td>
+            <td><%= grocery.quantity%></td>
+          </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  <% } else { %>
+    <h3>No Groceries Yet</h3>
+  <% } %>
 </main>
   
 <%- include('../partials/footer') %>

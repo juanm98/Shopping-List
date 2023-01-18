@@ -4,7 +4,7 @@ const Schema = mongoose.Schema
 
 const grocerySchema = new Schema({
   content: String,
-  grocery: {
+  quantity: {
     type: String,
     match: /[1-99]\d?/,
     min: 1

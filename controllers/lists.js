@@ -45,9 +45,21 @@ function show(req, res) {
   })
 }
 
+function deleteList(req, res) {
+  List.findByIdAndDelete(req.params.id)
+  .then(list => {
+    res.redirect("/lists")
+  })
+  .catch(err => {
+    console.log(err)
+    res.redirect("/lists")
+  })
+}
+
 export {
   index,
   newList as new,
   create,
-  show
+  show,
+  deleteList as delete
 }

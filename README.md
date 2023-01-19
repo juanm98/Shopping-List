@@ -10,9 +10,10 @@
 <a href="https://shoppinglistfly.fly.dev/" rel="nofollow">Use the ShopSmart here!</a>
 </h1>
 
-<h2>
+<br><h2>
 <a href="https://trello.com/b/Dmk4ydbq"> Trello Planning</a>
-<h2>
+</br><h2>
+
 
 <h2>Technologies Used</h2>
 
@@ -49,8 +50,8 @@ Check out the
 
 <ul class="contains-task-list">
 
-<li class="task-list-item"><input type="checkbox" id disabled class="task-list-item-checkbox"> "Light/Dark Mode"</li>
-<li class="task-list-item"><input type="checkbox" id disabled class="task-list-item-checkbox"> "Share list with others"</li>
-<li class="task-list-item"><input type="checkbox" id disabled class="task-list-item-checkbox"> "Disappearing animation when I check an item off the list"</li>
-<li class="task-list-item"><input type="checkbox" id disabled class="task-list-item-checkbox"> "Add multiple users to the same list"</li>
+<li class="task-list-item"><input type="checkbox" id disabled class="task-list-item-checkbox"> Light/Dark Mode</li>
+<li class="task-list-item"><input type="checkbox" id disabled class="task-list-item-checkbox"> Share list with others</li>
+<li class="task-list-item"><input type="checkbox" id disabled class="task-list-item-checkbox"> Disappearing animation when I check an item off the list</li>
+<li class="task-list-item"><input type="checkbox" id disabled class="task-list-item-checkbox"> Add multiple users to the same list</li>
 </ul>

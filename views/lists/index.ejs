@@ -3,7 +3,7 @@
 <%- include('../partials/nav') %>
 
 <main>
-  <h1>Shopping List</h1>
+  <h1><%= title %></h1>
   <table id="list">
     <thead>
       <tr>
@@ -13,18 +13,20 @@
     <tbody>
       <% lists.forEach(list => { %>
         <tr>
+          <% if (list.owner.equals(user?.profile._id)) { %>
           <td><%= list.title %></td>
           <td><a href="/lists/<%= list._id %>">See Groceries</a></td>
-        <td>
-          <form 
-            action="/lists/<%= list._id %>?_method=DELETE" 
-            method="POST"
-          >
-            <button>🗑️</button>
-          </form>
+          <td>
+              <form 
+              action="/lists/<%= list._id %>?_method=DELETE" 
+              method="POST"
+              >
+              <button>🗑️</button>
+            </form>
+            <% } %>
         </td>
-        </tr>
-        <% }) %>
+      </tr>
+      <% }) %>
     </tbody>
   </table>
 </main>

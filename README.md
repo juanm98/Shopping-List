@@ -10,7 +10,9 @@
 <a href="https://shoppinglistfly.fly.dev/" rel="nofollow">Use the ShopSmart here!</a>
 </h1>
 
-<h2><a href="https://trello.com/b/Dmk4ydbq"> Trello Planning</a><h2>
+<h2>
+<a href="https://trello.com/b/Dmk4ydbq"> Trello Planning</a>
+<h2>
 
 <h2>Technologies Used</h2>
 

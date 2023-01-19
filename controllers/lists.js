@@ -21,13 +21,14 @@ function newList(req, res) {
 }
 
 function create(req, res) {
+  req.body.owner = req.user.profile._id
   List.create(req.body)
   .then(list => {
     res.redirect("/lists")
   })
   .catch(err => {
     console.log(err)
-    res.redirect("/lists/new")
+    res.redirect("/lists")
   })
 }
 
@@ -101,7 +102,7 @@ function createGrocery(req, res) {
 }
 
 function deleteGrocery(req, res) {
-  List.findById(req.params.id)
+  List.findByIdAndDelete(req.params.id)
   .then(list => {
     res.redirect(`/lists/`)
   })
@@ -109,7 +110,6 @@ function deleteGrocery(req, res) {
     console.log(err)
     res.redirect("/")
   })
-  console.log(req.params);
 }
 
 export {

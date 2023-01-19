@@ -3,6 +3,7 @@
 <%- include('../partials/nav') %>
 
 <main>
+  <% if (list.owner.equals(user?.profile._id)) { %>
   <h1><%= title %></h1>
   <section>
     <div>
@@ -52,6 +53,7 @@
     </table>
   <% } else { %>
     <h3>No Groceries Yet</h3>
+  <% } %>
   <% } %>
 </main>
   

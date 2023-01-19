@@ -7,8 +7,9 @@
 <p>ShopSmart is a shopping list app that helps you stay organized and save time. Just log in with your Google account and start making shopping lists!</p>
 
 <h1>
-<a href="shoppinglistfly.fly.dev" rel="nofollow">Use the ShopSmart here!</a>
+<a href="https://shoppinglistfly.fly.dev/" rel="nofollow">Use the ShopSmart here!</a>
 </h1>
+
 <h2><a href="https://trello.com/b/Dmk4ydbq"> Trello Planning</a><h2>
 
 <h2>Technologies Used</h2>

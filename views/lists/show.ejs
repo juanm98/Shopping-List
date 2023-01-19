@@ -37,12 +37,13 @@
         <% list.groceries.forEach(function(grocery) { %>
           <tr>
             <td>
-              <input type="checkbox" name="checked" id="checked-checkbox"><%= grocery.content %>
+              <input type="checkbox" name="checked" id="checked-checkbox" class="checkInput">
+              <span><%= grocery.content %></span>
             </td>
             <td><%= grocery.quantity%></td>
             <td>
               <form 
-                action="/lists/<%= list._id %>/groceries/<%= grocery._id %>?_method=DELETE" 
+                action="/lists/<%= list._id %>/groceries/<%= grocery._id %>" 
                 method="POST"
               >
                 <button>🗑️</button>

@@ -101,15 +101,28 @@ function createGrocery(req, res) {
   })
 }
 
-function deleteGrocery(req, res) {
-  List.groceries[0].remove(req.params.id)
-  .then(list => {
-    res.redirect(`/lists/`)
-  })
-  .catch(err => {
-    console.log(err)
-    res.redirect("/")
-  })
+// First converted the function to be an async function. That way I don't have to do a bunch of .then() and .catch() for everything.
+async function deleteGrocery(req, res) {
+  try {
+  // Destruct the req.params and accessed the id and groceryId. These names need to match the params in the route.
+  const {id, groceryId} = req.params
+
+  // We need to look for the list and see if there's one that match the id we're getting from the params.
+  const foundList = await List.findById(id).lean();
+  
+  // If we don't find the list, redirect to another page
+  if(!foundList){
+  return res.redirect("/");
+  }
+  // At this point in the code, we know we have a list, now we just need to remove the grocery based on the grocery id
+  await List.findByIdAndUpdate(id, {$pull: {groceries: {_id: groceryId} }})
+  
+  // The grocery has been removed and we need to redirect now.
+  return res.redirect(`/lists/${id}`)
+  } catch (error) {
+  console.log(error)
+  return res.redirect("/");
+  }
 }
 
 export {

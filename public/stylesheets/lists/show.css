@@ -27,6 +27,10 @@ form * {
   border-radius: 5px;
 }
 
+.checkInput:checked + span {
+  text-decoration: line-through;
+}
+
 section {
   display: grid;
   grid-template-columns: auto auto;

@@ -25,7 +25,7 @@ router.post('/:id/groceries',isLoggedIn, listsCtrl.createGrocery)
 router.delete('/:id',isLoggedIn, listsCtrl.delete)
 
 // DELETE /lists/:id/groceries
-router.delete('/:id/groceries',isLoggedIn, listsCtrl.deleteGrocery)
+router.post('/:id/groceries/:groceryId',isLoggedIn, listsCtrl.deleteGrocery)
 
 // PUT /lists/:id
 router.put('/:id',isLoggedIn, listsCtrl.update)

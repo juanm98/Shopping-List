@@ -12,7 +12,8 @@
 
 <h2> 
 <a href="https://trello.com/b/Dmk4ydbq"> Trello Planning</a>
-<h2>
+</h2>
+
 <h2>Technologies Used</h2>
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)

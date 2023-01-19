@@ -35,7 +35,7 @@
 <h2>Credits</h2>
 <li>
 Check out the
-<a href="https://github.com/juanm98/Connect-Four-Game/blob/main/Assets.md">Attributions</a>
+<a href="https://github.com/juanm98/Shopping-List/blob/main/Assets.md">Attributions</a>
 </li>
 
 

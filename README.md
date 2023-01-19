@@ -32,7 +32,7 @@
 <li>GitHub</li>
 <li>Git</li>
 <li>Fly.io</li>
-<li>Oath API</li>
+<li>Google Oath API</li>
 </ul>
 
 <h2>Credits</h2>

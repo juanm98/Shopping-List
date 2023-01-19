@@ -101,15 +101,15 @@ function createGrocery(req, res) {
 }
 
 function deleteGrocery(req, res) {
-  List.findByIdAndDelete(req.params.id)
+  List.findById(req.params.id)
   .then(list => {
-    res.redirect("/lists/:id")
+    res.redirect(`/lists/`)
   })
   .catch(err => {
     console.log(err)
-    res.redirect("/lists/:id")
+    res.redirect("/")
   })
-  // console.log("I'M WORKINNNNNNNNNNNG")
+  console.log(req.params);
 }
 
 export {

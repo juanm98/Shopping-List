@@ -1,33 +1,34 @@
 import { Router } from 'express'
 import * as listsCtrl from '../controllers/lists.js'
+import { isLoggedIn } from '../middleware/middleware.js'
 
 const router = Router()
 // GET /lists
-router.get('/', listsCtrl.index)
+router.get('/',isLoggedIn, listsCtrl.index)
 
 // GET /lists/new
-router.get('/new', listsCtrl.new)
+router.get('/new',isLoggedIn, listsCtrl.new)
 
 // GET /lists/:id
-router.get('/:id', listsCtrl.show)
+router.get('/:id',isLoggedIn, listsCtrl.show)
 
 // GET /lists/:id/edit
-router.get('/:id/edit', listsCtrl.edit)
+router.get('/:id/edit',isLoggedIn, listsCtrl.edit)
 
 // POST /lists
-router.post('/', listsCtrl.create)
+router.post('/',isLoggedIn, listsCtrl.create)
 
 // POST /lists/:id/groceries
-router.post('/:id/groceries', listsCtrl.createGrocery)
+router.post('/:id/groceries',isLoggedIn, listsCtrl.createGrocery)
 
 // DELETE /lists/:id
-router.delete('/:id', listsCtrl.delete)
+router.delete('/:id',isLoggedIn, listsCtrl.delete)
 
 // DELETE /lists/:id/groceries
-router.delete('/:id/groceries', listsCtrl.deleteGrocery)
+router.delete('/:id/groceries',isLoggedIn, listsCtrl.deleteGrocery)
 
 // PUT /lists/:id
-router.put('/:id', listsCtrl.update)
+router.put('/:id',isLoggedIn, listsCtrl.update)
 
 export {
   router

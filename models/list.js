@@ -17,8 +17,8 @@ const listSchema = new Schema({
     type: String,
     required: true,
   },
-  groceries: [grocerySchema],
-  owner: {type: Schema.Types.ObjectId, ref: "Profile"}
+  owner: {type: Schema.Types.ObjectId, ref: "Profile"},
+  groceries: [grocerySchema]
 })
 
 const List = mongoose.model('List', listSchema)

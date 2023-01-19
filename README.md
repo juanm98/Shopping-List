@@ -11,15 +11,16 @@
 </h2>
 
 <h2>Technologies Used</h2>
-<ul>
-<li>HTML</li>
-<li>CSS</li>
-<li>JavaScript</li>
-<li>Node.js</li>
-<li>Express</li>
-<li>MongoDB</li>
-<li>Mongoose</li>
-</ul>
+
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
+![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white)
+![Mongoose](https://miro.medium.com/max/98/1*rchG6FrxrvUsgxnfgoq8ow.webp)
+
 
 <h2>
 <a href="https://trello.com/b/Dmk4ydbq"> Trello board</a>
@@ -30,6 +31,8 @@
 <li>VS Code</li>
 <li>GitHub</li>
 <li>Git</li>
+<li>Fly.io</li>
+<li>Oath API</li>
 </ul>
 
 <h2>Credits</h2>

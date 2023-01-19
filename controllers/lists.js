@@ -102,7 +102,7 @@ function createGrocery(req, res) {
 }
 
 function deleteGrocery(req, res) {
-  List.findByIdAndDelete(req.params.id)
+  List.groceries[0].remove(req.params.id)
   .then(list => {
     res.redirect(`/lists/`)
   })

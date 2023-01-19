@@ -25,8 +25,6 @@
 ![Mongoose](https://miro.medium.com/max/98/1*rchG6FrxrvUsgxnfgoq8ow.webp)
 
 
-<h2>
-
 <h2>Dev Tools</h2>
 
 <ul>

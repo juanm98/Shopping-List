@@ -7,12 +7,12 @@
     <a 
     href="/lists/new" <%- title === 'Add List' ? 'class="active"' : '' %>
   >
-    ADD LIST
+    ADD LIST 📃
   </a>
   <a 
   href="/lists" <%- title === 'All Lists' ? 'class="active"' : '' %>
 >
-  ALL LISTS
+  ALL LISTS 📃
 </a>
     <% if (user) { %>
       <a href="/auth/logout" class="right">
@@ -29,9 +29,9 @@
         class="g_id_signin right"
         data-type="standard"
         data-size="large"
-        data-theme="outline"
+        data-theme="filled_black"
         data-text="sign_in_with"
-        data-shape="rectangular"
+        data-shape="pill"
         data-logo_alignment="left"
       ></div>
     <% } %>

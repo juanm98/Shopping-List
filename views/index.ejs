@@ -2,16 +2,18 @@
 <%- include('./partials/nav') %>
 
 <main>
-  <div class="container">Hello World</div>
   <h1> <%= user ? user.profile.name : "" %></h1>
   <% if (user?.profile.avatar) { %>
     <div>
       <img
-        src="<%= user.profile.avatar %>"
-        alt="<%= user.profile.name %> avatar"
+      src="<%= user.profile.avatar %>"
+      alt="<%= user.profile.name %> avatar"
       />
     </div>
-  <% } %>
+    <% } %>
+    <div class="container">
+      Welcome! Let's get started shopping with ShopSmart! Please make sure to sign in with your Google account to save your list and keep track of what you need.
+    </div>
 </main>
 
 <%- include('./partials/footer') %>

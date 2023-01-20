@@ -1,8 +1,5 @@
 form {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(2, minmax(auto, 352px));
-  font-size: 20px;
+  font-size: 60px;
 }
 
 form * {
@@ -12,8 +9,16 @@ form * {
 }
 
 form > button {
-  grid-column: span 2;
-  width: 160px;
+  width: 120px;
   margin-left: auto;
   font-size: 22px;
+}
+
+button:hover {
+  background-color: gray;
+}
+
+label {
+  font-family: 'Roboto', sans-serif;
+  font-size: x-large;
 }

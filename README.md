@@ -50,7 +50,6 @@ Check out the
 
 <ul class="contains-task-list">
 
-<li class="task-list-item"><input type="checkbox" id disabled class="task-list-item-checkbox"> Light/Dark Mode</li>
 <li class="task-list-item"><input type="checkbox" id disabled class="task-list-item-checkbox"> Share list with others</li>
 <li class="task-list-item"><input type="checkbox" id disabled class="task-list-item-checkbox"> Disappearing animation when I check an item off the list</li>
 <li class="task-list-item"><input type="checkbox" id disabled class="task-list-item-checkbox"> Add multiple users to the same list</li>

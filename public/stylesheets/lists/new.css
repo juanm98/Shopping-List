@@ -22,3 +22,7 @@ label {
   font-family: 'Roboto', sans-serif;
   font-size: x-large;
 }
+
+button {
+  background-color: #1f84cd;
+}

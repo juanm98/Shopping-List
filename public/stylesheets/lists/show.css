@@ -24,7 +24,7 @@ form * {
 
 section {
   font-size:xx-large;
-  padding: 15px;
+  padding: 25px;
 }
 
 button {
@@ -37,7 +37,7 @@ button:hover {
 }
 
 label {
-  margin: 40px 10px 40px 10px;
+  margin: 50px 10px 50px 10px;
 }
 
 #checked-checkbox {

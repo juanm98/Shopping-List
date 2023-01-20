@@ -33,6 +33,7 @@ table td {
 
 button {
   background-color: #1f84cd;
+  border-radius: 15px;
 }
 
 button:hover {

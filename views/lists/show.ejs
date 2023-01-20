@@ -4,7 +4,6 @@
 
 <main>
   <% if (list.owner.equals(user?.profile._id)) { %>
-  <h1><%= title %></h1>
   <section>
     <div>
       <%= list.title %>
@@ -13,7 +12,6 @@
       </a>
     </div>
   </section>
-  <h2></h2>
   <form 
   id="add-grocery-form"
   action="/lists/<%= list._id %>/groceries"

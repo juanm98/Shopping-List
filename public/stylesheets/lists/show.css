@@ -1,20 +1,9 @@
-ul {
-  margin: 0 0 16px;
-  padding: 0;
-  list-style: none;
-}
-
-li {
-  font-weight: bold;
-}
-
 table {
-  font-size: 20px;
+  font-size: 24px;
 }
 
 table thead th {
-  padding: 5px;
-  border-bottom: 2px solid #424748;
+  padding: 20px;
 }
 
 table td {
@@ -24,7 +13,9 @@ table td {
 
 form * {
   padding: 5px;
-  border-radius: 5px;
+  border-radius: 15px;
+  margin: 10px;
+  font-size: 22px;
 }
 
 .checkInput:checked + span {
@@ -32,11 +23,23 @@ form * {
 }
 
 section {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-gap: 16px;
+  font-size:xx-large;
+  padding: 15px;
 }
 
-section div:nth-child(even) {
-  font-weight: bold;
+button {
+  background-color: #1f84cd;
+  border-radius: 15px;
+}
+
+button:hover {
+  background-color: gray;
+}
+
+label {
+  margin: 40px 10px 40px 10px;
+}
+
+#checked-checkbox {
+  width: 16px; height: 16px;
 }

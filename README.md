@@ -1,7 +1,7 @@
 <h1>ShopSmart!</h1>
 
 
-<img src="" alt="Shopping-list">
+<img src="https://imgur.com/a/5wYUXok" alt="Shopping-list">
 
 
 <p>ShopSmart is a shopping list app that helps you stay organized and save time. Just log in with your Google account and start making shopping lists!</p>

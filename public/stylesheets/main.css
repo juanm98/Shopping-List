@@ -38,7 +38,7 @@ body > main h1:first-child {
 
 body > nav {
   grid-area: nav;
-  background-color: #ffffff;
+  background-color: #000000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -91,10 +91,6 @@ nav > a.active {
     background-color: #000000;
     color: white;
   } 
-  
-  body > nav {
-    background-color: #000000;
-  }
 }
 
 @media (prefers-color-scheme: white) {

@@ -10,3 +10,5 @@ Markdown-badges: https://github.com/Ileriayo/markdown-badges
 Mongoose Icon: https://miro.medium.com/max/640/1*rchG6FrxrvUsgxnfgoq8ow.webp
 
 Google Fonts: https://fonts.google.com/specimen/Roboto
+
+Help for my delete function: https://github.com/LopinRD
